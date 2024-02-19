@@ -8,7 +8,7 @@ export default function home() {
   return (
     <div>
       <div className="container ">
-        <div className="row">
+        <div className="row ">
           {
             data.map((a)=>(
               <>
@@ -19,7 +19,7 @@ export default function home() {
             <div><h5>{a.name}</h5></div>
             <p class="card-text">{a.descrip}</p>
             <hr/>
-            <img className="col-md-3 rounded-5" src={a.pfp} alt="text"/>
+            <img className="col-sm-2 rounded-5" src={a.pfp} alt="text"/>
             <h5><Link to={`profile/${a.id}`}>{a.name}</Link></h5>
 
           </div>
